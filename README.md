@@ -22,6 +22,10 @@ The system adapts continuously as users engage with content, similar to recommen
 
 ## 🧠 High-Level Architecture
 
+## 🏗️ Architecture
+
+![System Architecture](architecture.png)
+
 **Client–Server Architecture**
 
 - **Frontend (React.js)**  
@@ -110,7 +114,8 @@ The system adapts continuously as users engage with content, similar to recommen
 ## 📁 Project Structure
 ```
 Personalized-News-Aggregator-With-Content-Recommendationnews/
-│
+│── architecture.png
+|
 ├── backend/
 │ ├── models/
 │ ├── index.js
@@ -128,6 +133,7 @@ Personalized-News-Aggregator-With-Content-Recommendationnews/
 ├── README.md
 ├── .gitignore
 └── package.json
+
 ```
 
 ---
