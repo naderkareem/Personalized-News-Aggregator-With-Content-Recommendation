@@ -1,70 +1,170 @@
-# Getting Started with Create React App
+# 📰 Personalized News Aggregator With Content Recommendation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack, machine learning–powered web application that delivers **personalized, categorized, and accessible news content** by analyzing user behavior and article semantics in real time.
 
-## Available Scripts
+This project demonstrates practical experience in **full-stack development**, **recommendation systems**, and **NLP-driven content classification**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Why This Project Matters
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Modern users are overwhelmed by generic news feeds that ignore individual preferences.  
+This application solves that problem by:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Automatically categorizing news articles using NLP
+- Learning from user interactions to personalize content
+- Delivering a clean, responsive, and accessible reading experience
+- Scaling efficiently using a modular client–server architecture
 
-### `npm test`
+The system adapts continuously as users engage with content, similar to recommendation engines used by large consumer platforms.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧠 High-Level Architecture
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Client–Server Architecture**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend (React.js)**  
+  Handles UI rendering, user interactions, and accessibility features like text-to-speech.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Backend (Node.js + Express)**  
+  Manages APIs, authentication, personalization logic, and data orchestration.
 
-### `npm run eject`
+- **Database (MongoDB)**  
+  Stores users, articles, and interaction history.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Machine Learning Layer**
+  - Transformer-based NLP trained model for article categorization
+  - Neural network–based personalization using behavioral signals
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ✨ Key Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 🔐 Secure authentication using JWT & bcrypt
+- 🗂️ Automatic article categorization (NLP-based)
+- 🧠 Personalized news feed based on user behavior
+- ❤️ Like, comment, and share functionality
+- 🔊 Text-to-Speech for improved accessibility
+- ⏱️ Reading time tracking
+- 📱 Fully responsive UI
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧪 Machine Learning & Personalization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Article Categorization
+- Uses a transformer-based trained model (DistilBERT)
+- Classifies articles into:
+  - Politics
+  - Business
+  - Sports
+  - Science & Technology
+  - General
 
-### Code Splitting
+### Personalization Engine
+- Built using **TensorFlow.js**
+- Ranks articles based on:
+  - Likes
+  - Reading duration
+  - Category preferences
+- Continuously improves recommendations as interaction data grows
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📊 Performance Metrics
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Categorization accuracy: **~92%**
+- Precision: **93%**
+- Recall: **91%**
+- F1 Score: **92%**
+- Average authentication latency: **~2 seconds**
+- Average categorization time: **~4 seconds**
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🛠️ Tech Stack
 
-### Advanced Configuration
+### Frontend
+- React.js
+- JavaScript
+- HTML, CSS
+- Tailwind CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Backend
+- Node.js
+- Express.js
+- JWT, bcrypt
 
-### Deployment
+### Database
+- MongoDB
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Machine Learning
+- Python
+- Hugging Face Transformers (DistilBERT)
+- TensorFlow.js
+- Pandas, NumPy
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📁 Project Structure
+```
+Personalized-News-Aggregator-With-Content-Recommendationnews/
+│
+├── backend/
+│ ├── models/
+│ ├── index.js
+│ ├── categorizer.py
+│ ├── fine_tune.py
+│ ├── package.json
+│ └── .env.example
+│
+├── src/
+│ ├── components/
+│ ├── pages/
+│ └── App.js
+│
+├── public/
+├── README.md
+├── .gitignore
+└── package.json
+```
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+- Node.js
+- MongoDB
+- Python 3.9+
+
+### Backend Setup
+```bash
+cd backend
+npm install
+node index.js
+Frontend Setup
+npm install
+npm start
+🔐 Environment Variables
+Create a .env file inside backend/:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+NEWS_API_KEY=your_newsapi_key
+GNEWS_API_KEY=your_gnews_key
+🔮 Future Improvements
+Mobile application (Android & iOS)
+
+Offline reading mode
+
+Multi-language support
+
+Trend analysis & topic forecasting
+
+User analytics dashboard
+
+Premium subscription features
+
