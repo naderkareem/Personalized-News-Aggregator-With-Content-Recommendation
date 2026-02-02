@@ -155,9 +155,11 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 NEWS_API_KEY=your_newsapi_key
 GNEWS_API_KEY=your_gnews_key
+
+```
 🔮 Future Improvements
 Mobile application (Android & iOS)
-```
+
 Offline reading mode
 
 Multi-language support
